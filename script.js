@@ -1,3 +1,5 @@
+showResult();
+
 let click1 = document.querySelector('.click1');
 let click2 = document.querySelector('.click2');
 let click3 = document.querySelector('.click3');
