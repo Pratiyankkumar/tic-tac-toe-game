@@ -1,0 +1,54 @@
+.game-container{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: auto;
+  margin-top: 150px;
+}
+.row1{
+  display: flex;
+  flex-direction: row;
+}
+.block{
+  width: 60px;
+  height: 60px;
+  background-color: lightblue;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.circle-image,
+.cross-image{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.restart-button,
+.reset-button{
+  padding: 8px 18px;
+  cursor: pointer;
+  background-color: rgba(74, 75, 131, 255);;
+  color: white;
+  font-family: Noto Sans;
+  border: 0px solid transparent;
+  border-radius: 3px;
+}
+.reset-button{
+  margin-left: 10px;
+}
+.restart-button-container{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.result-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: Noto Sans;
+}
+.para2{
+  margin-left: 20px;
+}

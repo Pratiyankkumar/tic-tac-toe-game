@@ -1,0 +1,137 @@
+let click1 = document.querySelector('.click1');
+let click2 = document.querySelector('.click2');
+let click3 = document.querySelector('.click3');
+let click4 = document.querySelector('.click4');
+let click5 = document.querySelector('.click5');
+let click6 = document.querySelector('.click6');
+let click7 = document.querySelector('.click7');
+let click8 = document.querySelector('.click1');
+let click9 = document.querySelector('.click1');
+
+let player1 = 'circle';
+let player2 = 'cross';
+
+ticTacToeArray = [
+  [click1,click2,click3],
+  [click4,click5,click6],
+  [click7,click8,click9]
+]
+
+playerMove(click1,player1);
+ 
+
+function playerMove () {
+  for (let i=1; i<=9; i++) {
+    click.addEventListener('click', () => {
+      if (player === 'circle') {
+        click.innerHTML = `<img class="circle-image" src="circle.svg" alt="">`
+      } else if (player === 'cross') {
+        click.innerHTML = `<img class="cross-image" src="cross.svg" alt="">`
+      }
+    })
+  }
+}
+
+
+if (click1.innerHTML===click4.innerHTML && click4.innerHTML===click7.innerHTML) {
+  if (button.innerHTML=== `<img class="circle-image" src="circle.svg" alt="">`) {
+    alert('Player1 wins the game')
+  } else {
+    alert('Player 2 wins the game')
+  }
+}
+
+
+if (click1.innerHTML===click2.innerHTML && click1.innerHTML===click3.innerHTML) {
+      if (button.innerHTML=== `<img class="circle-image" src="circle.svg" alt="">`) {
+        alert('Player1 wins the game')
+      } else {
+        alert('Player 2 wins the game')
+      }
+    }
+
+    if (click3.innerHTML===click6.innerHTML && click3.innerHTML===click9.innerHTML) {
+      if (button.innerHTML=== `<img class="circle-image" src="circle.svg" alt="">`) {
+        alert('Player1 wins the game')
+      } else {
+        alert('Player 2 wins the game')
+      }
+    }
+
+    if (click9.innerHTML===click8.innerHTML && click9.innerHTML===click7.innerHTML) {
+      if (button.innerHTML=== `<img class="circle-image" src="circle.svg" alt="">`) {
+        alert('Player1 wins the game')
+      } else {
+        alert('Player 2 wins the game')
+      }
+    }
+
+    if (click2.innerHTML===click5.innerHTML && click2.innerHTML===click8.innerHTML) {
+      if (button.innerHTML=== `<img class="circle-image" src="circle.svg" alt="">`) {
+        alert('Player1 wins the game')
+      } else {
+        alert('Player 2 wins the game')
+      }
+    }
+
+    if (click4.innerHTML===click5.innerHTML && click4.innerHTML===click6.innerHTML) {
+      if (button.innerHTML=== `<img class="circle-image" src="circle.svg" alt="">`) {
+        alert('Player1 wins the game')
+      } else {
+        alert('Player 2 wins the game')
+      }
+    }
+
+    if (click1.innerHTML===click5.innerHTML && click1.innerHTML===click9.innerHTML) {
+      if (button.innerHTML=== `<img class="circle-image" src="circle.svg" alt="">`) {
+        alert('Player1 wins the game')
+      } else {
+        alert('Player 2 wins the game')
+      }
+    }
+
+    if (click3.innerHTML===click5.innerHTML && click3.innerHTML===click7.innerHTML) {
+      if (button.innerHTML=== `<img class="circle-image" src="circle.svg" alt="">`) {
+        alert('Player1 wins the game')
+      } else {
+        alert('Player 2 wins the game')
+      }
+    }
+
+
+let click1 = document.querySelector('.click1');
+let click2 = document.querySelector('.click2');
+let click3 = document.querySelector('.click3');
+let click4 = document.querySelector('.click4');
+let click5 = document.querySelector('.click5');
+let click6 = document.querySelector('.click6');
+let click7 = document.querySelector('.click7');
+let click8 = document.querySelector('.click8');
+let click9 = document.querySelector('.click9');
+
+
+let array = [
+  [click1,click2,click3],
+  [click4,click5,click6],
+  [click7,click8,click9]
+]
+
+let currentPlayer = 1;
+
+
+let clickButtonElement = document.querySelectorAll('.click');
+clickButtonElement.forEach(button => {
+  button.addEventListener('click', () => {
+    if (currentPlayer === 1) {
+      // Player 1's turn
+      button.innerHTML = `<img class="circle-image" src="circle.svg" alt="">`;
+    } else {
+      // Player 2's turn
+      button.innerHTML = `<img class="cross-image" src="cross.svg" alt="">`;
+    }
+    // Switch turns after each button click
+    currentPlayer = currentPlayer === 1 ? 2 : 1;
+
+    
+  })  
+});
