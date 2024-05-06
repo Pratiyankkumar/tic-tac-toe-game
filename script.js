@@ -1,3 +1,5 @@
+let playerResult = JSON.parse(localStorage.getItem('playerResult')) || { playerX: 0, playerY: 0 };
+
 showResult();
 
 let click1 = document.querySelector('.click1');
@@ -16,7 +18,7 @@ let array = [
   [click7,click8,click9]
 ]
 
-let playerResult = JSON.parse(localStorage.getItem('playerResult')) || { playerX: 0, playerY: 0 };
+
 
 
 let currentPlayer = 1;
